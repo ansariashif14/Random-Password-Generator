@@ -32,8 +32,8 @@ function myRating(e){
 			document.getElementById("rate").innerText="Good!"
 			return;
 		default:
-				document.getElementById("rate").innerText="Awsome!"
-				return;
+			document.getElementById("rate").innerText="Awsome!"
+			return;
 		
 	}
 }
