@@ -6,6 +6,7 @@
 
 body {
 	background-image: url('https://thehackernews.com/images/-07O649m7bZU/YPGy1slYgMI/AAAAAAAABJA/x30NYvoBqsYsUlsLBijjFINBngxN2TJYQCLcBGAsYHQ/s728-rj-e3650/Password-Security.jpg');
+	background-size: cover;
 	color: #fff;
 	display: flex;
 	font-family: 'Muli', sans-serif;
@@ -31,7 +32,7 @@ input[type=checkbox] {
 
 .container {
 	background-color: #212141;
-	box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.5);
 	padding: 20px;
 	width: 350px;
 	max-width: 100%;
@@ -66,6 +67,7 @@ input[type=checkbox] {
 
 .btn {
 	border: none;
+	box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.5);
 	color: #fff;
 	cursor: pointer;
 	font-size: 16px;
@@ -250,4 +252,9 @@ input[type=checkbox] {
 	.floating-btn {
 		right: 10px;
 	}
+}
+
+.main{
+	color : rgba(139, 132, 132, 0.788);
+	size-adjust: 50px;
 }
