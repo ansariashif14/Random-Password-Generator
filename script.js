@@ -7,6 +7,37 @@ const symbolsEl = document.getElementById('symbols');
 const generateEl = document.getElementById('generate');
 const clipboard = document.getElementById('clipboard');
 
+//for Rating
+const ul = document.querySelector('ul');
+function myRating(e){
+	e.stopPropagation();
+	console.log(e.target.id);
+	let N=Number(e.target.id);
+	for(let i=1;i<=N;i++)
+	{
+		let x = i.toString();
+		document.getElementById(x).style.color = 'red';
+	}
+	switch(N){
+		case 1:
+			document.getElementById("rate").innerText="Bad!"
+			return;
+		case 2:
+			document.getElementById("rate").innerText="Improve!"
+			return;
+		case 3:
+			document.getElementById("rate").innerText="Average!"
+			return;
+		case 4:
+			document.getElementById("rate").innerText="Good!"
+			return;
+		default:
+				document.getElementById("rate").innerText="Awsome!"
+				return;
+		
+	}
+}
+
 const randomFunc = {
 	lower: getRandomLower,
 	upper: getRandomUpper,
@@ -96,3 +127,5 @@ floating_btn.addEventListener('click', () => {
 close_btn.addEventListener('click', () => {
 	social_panel_container.classList.remove('visible')
 });
+
+
