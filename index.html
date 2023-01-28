@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="styles.css" />
 		<script src="script.js" defer></script>
         <title>Random Password Generator</title>
+		<script src="https://kit.fontawesome.com/4504b7198c.js" crossorigin="anonymous"></script>
     </head>
 <body>
 <div class="container">
@@ -13,7 +14,7 @@
 	<div class="result-container">
 		<span id="result"></span>
 		<button class="btn" id="clipboard">
-			<i class="far fa-clipboard"></i>
+			<i class="fa-solid fa-copy"></i>
 		</button>
 	</div>
 	<div class="settings">
@@ -45,16 +46,25 @@
 <!-- SOCIAL PANEL HTML -->
 <div class="social-panel-container">
 	<div class="social-panel">
-		<p>Created by - <i class="fa fa-heart"></i>
-			<a target="_blank" href="https://my.newtonschool.co/user/ansariashif14/">Mohammad Ashif</a></p>
-		<button class="close-btn"><i class="fas fa-times"></i></button>
-		<h4>1 is Min 5 is Max</h4>
+		<p>Created By -
+			<a target="_blank" href="https://www.linkedin.com/in/mohammad-ashif/">Mohammad Ashif</a></p>
+		<h4 id="rate"></h4>
 		<ul>
-			<li>&#128524;</li>
-			<li>&#128522;</li>
-			<li>&#128513;</li>
-			<li>&#128512;</li>
-			<li>&#128518;</li> 
+			<li onclick="myRating(event)">
+				<i id="1" class="fa-solid fa-star main"></i>
+			</li>
+			<li onclick="myRating(event)">
+				<i id="2" class="fa-solid fa-star main"></i>
+			</li>
+			<li onclick="myRating(event)">
+				<i id="3" class="fa-solid fa-star main"></i>
+			</li>
+			<li onclick="myRating(event)">
+				<i id="4" class="fa-solid fa-star main"></i>
+			</li>
+			<li onclick="myRating(event)">
+				<i id="5" class="fa-solid fa-star main"></i>
+			</li>
 		</ul>
 	</div>
 </div>
